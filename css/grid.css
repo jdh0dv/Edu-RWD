@@ -49,7 +49,7 @@
                         "board twitter"
                         "favorite ."
                         "news news";
-    grid-column-gap: 20px;                        
+    /* grid-column-gap: 20px;                         */
  }
  .book{
    grid-area: book;
@@ -72,7 +72,7 @@
   .main{
     grid-auto-rows: minmax(50px, auto);
     grid-template-columns: repeat(4,25%);
-    grid-column-gap: 20px;
+    /* grid-column-gap: 20px; */
   }
   .news{
     grid-area: 1/1/2/5;
