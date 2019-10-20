@@ -283,10 +283,31 @@ input[type="search"]:focus::-moz-placeholder { /* Firefox 18- */
   margin-left: 0;
 }
 
-
+/* 공통 푸터 */
 .footer{
-  background-color:purple;
-  height: 10vh;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color:#988574;
+  height: 50vh; */
+  color: #fff;
+  padding:1.5em 1em;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  /* background-image: repeating-linear-gradient(rgba(255,0,0,.5) 0,rgba(255,0,0,.5) 20px,transparent 20px,transparent 40px) */
+}
+.address {
+  font-style: normal;
+  margin-bottom: 1em;
 }
 
 
@@ -418,6 +439,16 @@ input[type="search"]:focus::-moz-placeholder { /* Firefox 18- */
   .sub-menu li {
     margin: 0.5em 0;
   }
+  .main{
+    padding: 0 1em;
+  }
+  /* 모바일 푸터 */
+  .footer{
+    margin-top: 1em;
+  }
+  .address span{
+    display: block;
+  }
 }
 /* Desktop Device */
 @media screen and (min-width: 1000px){
@@ -516,5 +547,8 @@ input[type="search"]:focus::-moz-placeholder { /* Firefox 18- */
   }
   .twitter{
     width: 400px;
+  }
+  .footer{
+    text-align: center;
   }
 }
