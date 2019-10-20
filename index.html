@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>반응형 웹</title>
-  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>  
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./css/style.css">
   <!-- <link rel="stylesheet" href="./css/float.css"> -->
   <!-- <link rel="stylesheet" href="./css/grid.css"> -->
   <script src="./js/jquery.min.js" defer></script>
   <script src="./js/menu.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <header class="header">
@@ -52,7 +54,7 @@
             <li><a href="#">CSS VS CSS3</a></li>
             <li><a href="#">CSS 애니메이션</a></li>
           </ul>
-        </li>   
+        </li>
         <li class="menu-list">
           <a href="#" class="menu-item">웹표준/웹접근성</a>
           <ul class="sub-menu">
@@ -76,7 +78,7 @@
             <li><a href="#">이미지 자료실</a></li>
             <li><a href="#">예제 자료실</a></li>
           </ul>
-        </li>                            
+        </li>
       </ul>
     </nav>
     <main class="main">
@@ -88,12 +90,7 @@
           </span>
         </h2>
         <figure class="book-cover">
-          <img
-            class="responsive"
-            src="images/book_rwd.jpg"
-            alt=""
-            aria-labelledby="book-cover-caption"
-          />
+          <img class="responsive" src="images/book_rwd.jpg" alt="" aria-labelledby="book-cover-caption" />
           <figcaption id="book-cover-caption">
             반응형웹 핵심 가이드북 도서
           </figcaption>
@@ -127,11 +124,7 @@
             />
           </video> -->
           <div class="iframe-container video-16-9">
-            <iframe
-              class="iframe-video"
-              src="https://www.youtube.com/embed/0Jw7OBkkfzo"
-              allowfullscreen
-            ></iframe>
+            <iframe class="iframe-video" src="https://www.youtube.com/embed/0Jw7OBkkfzo" allowfullscreen></iframe>
           </div>
           <figcaption class="a11y-hidden">구글 개발자 이야기</figcaption>
         </figure>
@@ -170,20 +163,28 @@
             <time datetime="2018-04-04T12:34:12">2018.04.03</time>
           </li>
           <li class="icon-star">
-            <a href="#"
-              >여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a
-            >
+            <a href="#">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
             <time datetime="2018-04-04T12:34:12">2018.04.03</time>
           </li>
         </ul>
-        <a href="#" class="board-more" aria-labelledby="board" title="게시판으로 이동"
-          ><span class="icon-plus point-color-brown" aria-hidden="true"></span>더보기</a
-        >
+        <a href="#" class="board-more" aria-labelledby="board" title="게시판으로 이동"><span
+            class="icon-plus point-color-brown" aria-hidden="true"></span>더보기</a>
       </section>
-      <section class="favorite">인기사이트</section>
+      <section class="favorite">
+        <h2 class="favorite-heading ir ir-favorite">
+          인기사이트<span class="en-block point-color-orange">favorite site</span>
+        </h2>
+        <ol class="favorite-list">
+          <li><a href="http://ko.learnlayout.com/" target="_blank" title="새창으로 열기">Learn CSS Layout<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="http://flexboxfroggy.com" target="_blank" title="새창으로 열기">Flexbox Froggy<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="http://cssgridgarden.com" target="_blank" title="새창으로 열기">CSS Grid Garden<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="https://developer.mozilla.org/ko/" target="_blank" title="새창으로 열기">MDN Web Docs<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+        </ol>
+      </section>
       <article class="twitter">트위터</article>
     </main>
     <footer class="footer">푸터</footer>
   </div>
 </body>
+
 </html>
