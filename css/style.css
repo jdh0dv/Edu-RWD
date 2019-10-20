@@ -1,6 +1,4 @@
 @charset "uft-8";
-@import url(./normalize.css);
-@import url(./fonts.css);
 *, *::before, *::after { 
   box-sizing: border-box;
   font-family: 'Spoqa Han Sans', 'Sans-serif'; 
@@ -107,6 +105,12 @@ legend, .a11y-hidden{
   left: 0;
   width: 100%;
   height: 100%;
+}
+.circle-photo{
+  display: block;
+  border-radius: 50%; 
+  padding: 0.25em;
+  border:1px solid #181818; 
 }
 
 /* All Device */
@@ -226,7 +230,7 @@ input[type="search"]:focus::-moz-placeholder { /* Firefox 18- */
 /* 공통 인기사이트 */
 .favorite-list{
   list-style-type: none;
-  counter-reset: 0;
+  counter-reset: number;
   padding-left: 1.5em;
 }
 .favorite-list li{
@@ -257,11 +261,34 @@ input[type="search"]:focus::-moz-placeholder { /* Firefox 18- */
 
 
 /* 공통 트위터 */
+.twitter{
+}
+.twitter-content{
+  position: relative;  
+  padding-right: calc(20% + 1.5em);
+}
+.twitter-user-profile{
+  position: absolute;
+  top:0;
+  right:0;
+  margin: 0;
+  width: 20%;
+  border-radius: 50%;
+}
+.twitter-user-profile img{
+  margin-left: auto;
+}
+.twitter-user-name, .twitter-user-id{
+  display: inline;
+  margin-left: 0;
+}
+
 
 .footer{
   background-color:purple;
   height: 10vh;
 }
+
 
 /* Movile Device */
 @media screen and (max-width: 1000px){
@@ -485,6 +512,7 @@ input[type="search"]:focus::-moz-placeholder { /* Firefox 18- */
   }
   .favorite{
     width: 240px;
+    order:1;
   }
   .twitter{
     width: 400px;

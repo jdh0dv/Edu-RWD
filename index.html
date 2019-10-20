@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>반응형 웹</title>
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- <link rel="stylesheet" href="./css/float.css"> -->
   <!-- <link rel="stylesheet" href="./css/grid.css"> -->
@@ -167,21 +169,46 @@
             <time datetime="2018-04-04T12:34:12">2018.04.03</time>
           </li>
         </ul>
-        <a href="#" class="board-more" aria-labelledby="board" title="게시판으로 이동"><span
-            class="icon-plus point-color-brown" aria-hidden="true"></span>더보기</a>
+        <a href="#" class="board-more" aria-labelledby="board" title="게시판으로 이동">
+          <span class="icon-plus point-color-brown" aria-hidden="true"></span>더보기
+        </a>
       </section>
       <section class="favorite">
         <h2 class="favorite-heading ir ir-favorite">
           인기사이트<span class="en-block point-color-orange">favorite site</span>
         </h2>
         <ol class="favorite-list">
-          <li><a href="http://ko.learnlayout.com/" target="_blank" title="새창으로 열기">Learn CSS Layout<span class="icon-link-ext" aria-hidden="true"></span></a></li>
-          <li><a href="http://flexboxfroggy.com" target="_blank" title="새창으로 열기">Flexbox Froggy<span class="icon-link-ext" aria-hidden="true"></span></a></li>
-          <li><a href="http://cssgridgarden.com" target="_blank" title="새창으로 열기">CSS Grid Garden<span class="icon-link-ext" aria-hidden="true"></span></a></li>
-          <li><a href="https://developer.mozilla.org/ko/" target="_blank" title="새창으로 열기">MDN Web Docs<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="http://ko.learnlayout.com/" target="_blank" title="새창으로 열기">Learn CSS Layout<span
+                class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="http://flexboxfroggy.com" target="_blank" title="새창으로 열기">Flexbox Froggy<span
+                class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="http://cssgridgarden.com" target="_blank" title="새창으로 열기">CSS Grid Garden<span
+                class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="https://developer.mozilla.org/ko/" target="_blank" title="새창으로 열기">MDN Web Docs<span
+                class="icon-link-ext" aria-hidden="true"></span></a></li>
         </ol>
       </section>
-      <article class="twitter">트위터</article>
+      <article class="twitter">
+        <h2 class="twitter-heading ir ir-twitter">
+          트위터<span class="en-block point-color-skyblue">Web Cafe Twitter</span>
+        </h2>
+        <div class="twitter-content">
+          <dl class="twitter-user">
+            <dt class="a11y-hidden">사용자 이름</dt>
+            <dd class="twitter-user-name">김데레사</dd>
+            <dt class="a11y-hidden">사용자 아이디</dt>
+            <dd class="twitter-user-id"><a href="https://twitter.com/@naradesign" target="_blank"
+                title="트위터 연결하기">@seulbinim</a></dd>
+          </dl>
+          <figure class="twitter-user-profile">
+            <img src="./images/seulbinim.jpg" alt="" class="circle-photo responsive">
+          </figure>
+          <p class="twitter-summary">
+            웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다. 참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.
+          </p>
+          <time class="twitter-date" datetime="2019-10-20T10:49:17"><span class="icon-calendar"></span>2019.10.20</time>
+        </div>
+      </article>
     </main>
     <footer class="footer">푸터</footer>
   </div>
